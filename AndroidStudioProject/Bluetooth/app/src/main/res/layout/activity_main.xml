@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotationX="0"
+    android:rotationY="0"
+    android:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonBLEOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="BLE ON"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonBLEOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="BLE OFF"
+            app:layout_constraintStart_toEndOf="@id/buttonBLEOn"
+            app:layout_constraintTop_toTopOf="@id/buttonBLEOn" />
+
+        <TextView
+            android:id="@+id/TextViewstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=" Status"
+            app:layout_constraintStart_toStartOf="@id/buttonBLEOn"
+            app:layout_constraintTop_toBottomOf="@id/buttonBLEOn" />
+
+        <Button
+            android:id="@+id/buttonConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Connect"
+            app:layout_constraintStart_toStartOf="@id/TextViewstatus"
+            app:layout_constraintTop_toBottomOf="@id/TextViewstatus" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Send"
+            app:layout_constraintStart_toEndOf="@id/TextEditSendData"
+            app:layout_constraintTop_toBottomOf="@id/buttonConnect" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextEditSendData"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:hint="please enter your text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonConnect" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="239dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/TextViewReceiveData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=" Receive"
+            app:layout_constraintStart_toStartOf="@id/TextEditSendData"
+            app:layout_constraintTop_toBottomOf="@id/TextEditSendData" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
