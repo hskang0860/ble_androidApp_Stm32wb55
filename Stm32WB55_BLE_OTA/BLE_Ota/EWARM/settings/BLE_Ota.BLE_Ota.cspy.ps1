@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Projects\P-NUCLEO-WB55.Nucleo\Applications\BLE\BLE_Ota\EWARM\settings\BLE_Ota.BLE_Ota.general.xcl" --backend -f "C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Projects\P-NUCLEO-WB55.Nucleo\Applications\BLE\BLE_Ota\EWARM\settings\BLE_Ota.BLE_Ota.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\BLE_Ota\EWARM\settings\BLE_Ota.BLE_Ota.general.xcl" --backend -f "C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\BLE_Ota\EWARM\settings\BLE_Ota.BLE_Ota.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Projects\P-NUCLEO-WB55.Nucleo\Applications\BLE\BLE_Ota\EWARM\settings\BLE_Ota.BLE_Ota.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Projects\P-NUCLEO-WB55.Nucleo\Applications\BLE\BLE_Ota\EWARM\settings\BLE_Ota.BLE_Ota.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\BLE_Ota\EWARM\settings\BLE_Ota.BLE_Ota.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\BLE_Ota\EWARM\settings\BLE_Ota.BLE_Ota.driver.xcl" 
 }

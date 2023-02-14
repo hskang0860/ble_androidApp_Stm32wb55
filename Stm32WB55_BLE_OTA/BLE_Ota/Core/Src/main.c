@@ -91,6 +91,7 @@ int main( void )
   Init_RTC();
 
   APPE_Init( );
+  printf("\n-----Reboot-----\n");
 
   while(1)
   {
@@ -286,7 +287,7 @@ void SystemClock_Config( void )
    * Select wakeup source of BLE RF
    */
   LL_RCC_SetRFWKPClockSource(LL_RCC_RFWKP_CLKSOURCE_LSE);
-  
+
   /* USER CODE BEGIN Smps */
 
 #if (CFG_USE_SMPS != 0)
@@ -303,7 +304,7 @@ void SystemClock_Config( void )
 #endif
 
   /* USER CODE END Smps */
-  
+
 
   return;
 }
@@ -350,7 +351,7 @@ void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
- 
+
   /* USER CODE END Error_Handler_Debug */
 }
 

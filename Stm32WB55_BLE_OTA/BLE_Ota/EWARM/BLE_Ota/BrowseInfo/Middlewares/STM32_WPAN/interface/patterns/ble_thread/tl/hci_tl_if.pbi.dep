@@ -1,7 +1,7 @@
-C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Projects\P-NUCLEO-WB55.Nucleo\Applications\BLE\BLE_Ota\EWARM\BLE_Ota\BrowseInfo\Middlewares\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl_if.pbi: \
-  C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl_if.c \
-  C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.h \
-  C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Projects\P-NUCLEO-WB55.Nucleo\Applications\BLE\BLE_Ota\EWARM\..\..\..\..\..\..\Middlewares\ST\STM32_WPAN\stm32_wpan_common.h \
+C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\BLE_Ota\EWARM\BLE_Ota\BrowseInfo\Middlewares\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl_if.pbi: \
+  C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl_if.c \
+  C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\hci_tl.h \
+  C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\Middlewares\ST\STM32_WPAN\stm32_wpan_common.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdint.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\ycheck.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\yvals.h \
@@ -15,7 +15,7 @@ C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Project
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdlib.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Product_stdlib.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdarg.h \
-  C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Projects\P-NUCLEO-WB55.Nucleo\Applications\BLE\BLE_Ota\EWARM\..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_compiler.h \
-  C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Projects\P-NUCLEO-WB55.Nucleo\Applications\BLE\BLE_Ota\EWARM\..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_iccarm.h \
+  C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\Drivers\CMSIS\Include\cmsis_compiler.h \
+  C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\Drivers\CMSIS\Include\cmsis_iccarm.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\aarch32\iccarm_builtin.h \
-  C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\tl.h
+  C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl\tl.h

@@ -64,8 +64,13 @@ void OTAS_STM_Notification( OTA_STM_Notification_t *p_notification )
   uint32_t size_left;
   OTAS_STM_Indication_Msg_t msg_conf;
 
+  uint8_t* cur_byte;
+  uint16_t wI;
+
   switch(p_notification->ChardId)
   {
+  	printf("Notification ID=%d\n", p_notification->ChardId);
+    
     case OTAS_STM_BASE_ADDR_ID:
     {
       switch( ((OTA_STM_Base_Addr_Event_Format_t*)(p_notification->pPayload))->Command )
@@ -89,11 +94,15 @@ void OTAS_STM_Notification( OTA_STM_Notification_t *p_notification )
           ((uint8_t*)&OTAS_APP_Context.base_address)[1] = (((uint8_t*)((OTA_STM_Base_Addr_Event_Format_t*)(p_notification->pPayload))->Base_Addr))[1];
           ((uint8_t*)&OTAS_APP_Context.base_address)[2] = (((uint8_t*)((OTA_STM_Base_Addr_Event_Format_t*)(p_notification->pPayload))->Base_Addr))[0];
           OTAS_APP_Context.write_value_index = 0;
-		  printf("hskang: OTAS STM APPLICATION UPLOAD SAART!!\n");
+		  printf("\nUPLOAD Ready!! start addr = 0x%x\n", OTAS_APP_Context.base_address);
           break;
 
         case OTAS_STM_UPLOAD_FINISHED:
           msg_conf = OTAS_STM_REBOOT_CONFIRMED;
+		   printf("\nUPLOAD Finish!\n");
+			static uint16_t t_delay = 10000;
+			while(t_delay>0)
+			t_delay = 0;
           (void) OTAS_STM_UpdateChar(OTAS_STM_CONF_ID, (uint8_t*)&msg_conf);
           break;
 
@@ -120,7 +129,7 @@ void OTAS_STM_Notification( OTA_STM_Notification_t *p_notification )
       while( size_left >= (DOUBLEWORD_SIZE_FOR_FLASH_PROGRAMMING - OTAS_APP_Context.write_value_index) )
       {
         uint32_t NbrOfDataToBeWritten = 1;
-        
+		
         memcpy( (uint8_t*)&OTAS_APP_Context.write_value + OTAS_APP_Context.write_value_index,
                 ((OTA_STM_Raw_Data_Event_Format_t*)(p_notification->pPayload))->Raw_Data + count,
                 DOUBLEWORD_SIZE_FOR_FLASH_PROGRAMMING - OTAS_APP_Context.write_value_index );
@@ -128,6 +137,13 @@ void OTAS_STM_Notification( OTA_STM_Notification_t *p_notification )
           NbrOfDataToBeWritten = FD_WriteData(OTAS_APP_Context.base_address,
                                               &(OTAS_APP_Context.write_value),
                                               1);
+
+		for(wI =0 ; wI <8; wI++)
+		{
+		 	cur_byte = (uint8_t*)(&OTAS_APP_Context.write_value) + wI;
+			printf("%x ", *cur_byte);
+		}
+											  
         if(*(uint64_t*)(OTAS_APP_Context.base_address)==OTAS_APP_Context.write_value)
         {
           OTAS_APP_Context.base_address += DOUBLEWORD_SIZE_FOR_FLASH_PROGRAMMING;

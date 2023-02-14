@@ -1,5 +1,5 @@
-C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Projects\P-NUCLEO-WB55.Nucleo\Applications\BLE\BLE_Ota\EWARM\BLE_Ota\BrowseInfo\Middlewares\STM32_WPAN\ble\core\osal.pbi: \
-  C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Middlewares\ST\STM32_WPAN\ble\core\template\osal.c \
+C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\BLE_Ota\EWARM\BLE_Ota\BrowseInfo\Middlewares\STM32_WPAN\ble\core\osal.pbi: \
+  C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\Middlewares\ST\STM32_WPAN\ble\core\template\osal.c \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\string.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\ycheck.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\yvals.h \
@@ -8,4 +8,4 @@ C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Project
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Product.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\ysizet.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Product_string.h \
-  C:\Users\hskang2\Downloads\en.stm32cubewb-1-15-0\STM32Cube_FW_WB_V1.15.0\Middlewares\ST\STM32_WPAN\ble\core\template\osal.h
+  C:\Users\hskang2\MyGitProject\Stm32WB55_BLE_OTA\Middlewares\ST\STM32_WPAN\ble\core\template\osal.h
